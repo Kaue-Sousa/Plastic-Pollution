@@ -1,0 +1,426 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+header {
+  width: 100%;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 14px;
+  padding-left: 20px;
+  width: 120px;
+  cursor: pointer;
+}
+
+.header-options {
+  color: #FFFFFF;
+  padding: 20px;
+}
+
+.header-options:hover {
+  color: #181818;
+}
+
+@media screen and (max-width: 768px) {
+  .header-options {
+    display: none;
+  }
+  .header-logo {
+    margin-left: 35%;
+  }
+}
+.header-iframe {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #181818;
+  padding-top: 10px;
+}
+.footer p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  font-size: 10px;
+  padding: 20px 0px 20px 0px;
+  border-top: white solid 1px;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+.footer-options {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #FFFFFF;
+  padding: 15px;
+}
+
+.footer-options:hover {
+  color: #D94140;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 14px;
+  padding-left: 20px;
+  width: 120px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .footer p {
+    padding: 20px 20px 20px 20px;
+  }
+}
+.footer-iframe {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 256px;
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 8px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+  overflow: hidden;
+}
+.content h1 {
+  padding: 10px;
+}
+.content h2, .content h3 {
+  padding: 20px 0px;
+}
+.content img {
+  max-width: 700px;
+}
+
+.background {
+  position: relative;
+  min-height: 100vh;
+}
+
+.background::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("../assets/background-gradient.png");
+  background-color: #181818;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+  opacity: 0.9;
+}
+
+.title {
+  color: #FFFFFF;
+  padding-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.title h1 {
+  text-align: center;
+  line-height: 150%;
+  font-size: 70px;
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    padding-top: 50px;
+  }
+  .title h1 {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .title h1 {
+    font-size: 20px;
+  }
+}
+.button-info {
+  padding: 14px 20px;
+  color: #FFFFFF;
+  background-color: #D94140;
+  border: 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+.button-info:hover {
+  animation: scaleButton 0.8s alternate infinite;
+}
+
+@keyframes scaleButton {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.07);
+  }
+}
+.section {
+  max-width: 1200px;
+  margin: -10px auto 30px;
+  padding: 30px 20px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1180px) {
+  .section {
+    margin: 20px 20px;
+  }
+}
+.image-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.image-content p {
+  font-size: small;
+  max-width: 700px;
+}
+
+.impacts {
+  background-color: #181818;
+  overflow: hidden;
+  color: #FFFFFF;
+}
+
+.initial-impacts-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 34px 14px 64px 14px;
+}
+.initial-impacts-content img {
+  max-width: 570px;
+  border-radius: 0;
+}
+
+.initial-impacts-content div {
+  flex: 1;
+}
+
+.impacts-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.impacts-description h2 {
+  font-size: 38px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .initial-impacts-content {
+    flex-direction: column;
+  }
+}
+.environment {
+  background-color: #FFFFFF;
+  overflow: hidden;
+  color: #181818;
+}
+
+.environment-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 14px;
+  padding: 34px 14px 30px 14px;
+}
+
+.environment-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.environment-description h2 {
+  font-size: 38px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.environment-images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.environment-images img {
+  max-height: 380px;
+  max-width: 600px;
+}
+
+@media screen and (max-width: 900px) {
+  .environment-images {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.the-ocean-cleanup {
+  background-color: #4E4D4D;
+  overflow: hidden;
+  color: #FFFFFF;
+}
+
+.initial-the-ocean-cleanup-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 14px;
+  padding: 34px 14px 30px 14px;
+}
+
+.the-ocean-cleanup-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.the-ocean-cleanup-description h2 {
+  font-size: 38px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.the-ocean-cleanup-description img {
+  max-width: 870px;
+}
+
+.plastic-pollution-infografic img {
+  max-height: 800px;
+  padding-top: 20px;
+  border-radius: 45px;
+}
+
+.the-ocean-cleanup-trash-images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.the-ocean-cleanup-trash-images img {
+  max-height: 290px;
+  max-width: 1000px;
+}
+.the-ocean-cleanup-trash-images p {
+  max-width: 440px;
+}
+
+@media screen and (max-width: 900px) {
+  .the-ocean-cleanup-trash-images {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.consumptiontips-list ol, .consumptiontips-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.consumptiontips-list ol {
+  display: block;
+  list-style-type: decimal;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 30px;
+}
+.consumptiontips-list ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: disc;
+  padding-left: 0;
+  margin-bottom: 10px;
+  margin-left: 1rem;
+  margin-top: 0;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-end: 0px;
+}
+
+body {
+  font-family: "Sora", sans-serif;
+  font-size: large;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+button {
+  font-family: "Sora", sans-serif;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  border-radius: 30px;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+p {
+  margin: 15px 0px;
+  font-size: 1em;
+  text-align: justify;
+  line-height: 1.5em;
+}/*# sourceMappingURL=style.css.map */

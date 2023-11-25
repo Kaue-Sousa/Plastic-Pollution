@@ -1,0 +1,259 @@
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 8px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    overflow: hidden;
+
+    h1{
+        padding: 10px;
+    }
+
+    h2,h3{
+        padding: 20px 0px;
+    }
+
+    img{
+        max-width: 700px;
+    }
+}
+
+.background{
+    position: relative;
+    min-height: 100vh;
+}
+
+.background::before{
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: url("../assets/background-gradient.png");
+    background-color: $black;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    opacity: 0.9;
+}
+
+.title{
+    color: $white;
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1{
+        text-align: center;
+        line-height: 150%;
+        font-size: 70px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title{
+        padding-top: 50px;
+        h1{
+            font-size: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title h1{
+        font-size: 20px;
+    }
+}
+
+.button-info{
+    padding: 14px 20px;
+    color: $white;
+    background-color: $red;
+    border: 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.button-info:hover{
+    animation: scaleButton 0.8s alternate infinite;
+}
+
+@keyframes scaleButton {
+    from{
+      transform: scale(1);
+    }
+    to{
+      transform: scale(1.07);
+    }
+}
+
+.section{
+    max-width: 1200px;
+    margin: -10px auto 30px;
+    padding: 30px 20px;
+    background-color: $white;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1180px) {
+    .section{
+        margin: 20px 20px;
+    }
+}
+
+.image-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    p{
+        font-size: small;
+        max-width: 700px;
+    }
+}
+
+// -----------------------------------------
+
+// impacts
+
+.impacts{
+    background-color: $black;
+    overflow: hidden;
+    color: $white;
+}
+
+.initial-impacts-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 34px 14px 64px 14px;
+
+    img{
+        max-width: 570px;
+        border-radius: 0;
+    }
+}
+
+.initial-impacts-content div{
+    flex: 1;
+}
+
+.impacts-description{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h2{
+        font-size: 38px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .initial-impacts-content{
+      flex-direction: column;
+    }
+}
+
+// -----------------------------------------
+
+// Environment
+
+.environment{
+    background-color: $white;
+    overflow: hidden;
+    color: $black;
+}
+
+.environment-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 14px;
+    padding: 34px 14px 30px 14px;
+}
+
+.environment-description{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h2{
+        font-size: 38px;
+        margin-bottom: 24px;
+        text-align: center;
+    }
+}
+
+.environment-images{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
+    img{
+        max-height: 380px;
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .environment-images{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+// -----------------------------------------
+
+// The Ocean Cleanup
+
+.the-ocean-cleanup{
+    background-color: $gray;
+    overflow: hidden;
+    color: $white;
+}
+
+.initial-the-ocean-cleanup-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 14px;
+    padding: 34px 14px 30px 14px;
+}
+
+.the-ocean-cleanup-description{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h2{
+        font-size: 38px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    img{
+        max-width: 870px;
+    }
+}
+
+// --------------------------------------------

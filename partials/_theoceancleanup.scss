@@ -1,0 +1,22 @@
+.the-ocean-cleanup-trash-images{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    img{
+        max-height: 290px;
+        max-width: 1000px;
+    }
+
+    p{
+        max-width: 440px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .the-ocean-cleanup-trash-images{
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -34,7 +34,8 @@
     content: '';
     display: block;
     position: absolute;
-    background-image: url("../assets/background.png");
+    background-image: url("assets/background.png");
+    background-color: $black;
     left: 0;
     top: 0;
     width: 100%;

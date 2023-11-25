@@ -8,16 +8,6 @@ header{
     justify-content: space-between;
 }
 
-.header-logo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 14px;
-    padding-left: 20px;
-    width: 120px;
-    cursor: pointer;
-}
-
 .header-options{
     color: $white;
     padding: 20px;
@@ -32,8 +22,8 @@ header{
         display: none;
     }
 
-    .header-logo{
-        margin-left: 35%;
+    .header-icon{
+        margin-left: 30%;
     }
 }
 

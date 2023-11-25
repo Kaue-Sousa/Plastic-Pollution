@@ -63,17 +63,15 @@
 }
 
 @media screen and (max-width: 768px) {
+    .background{
+        min-height: 70vh;
+    }
+
     .title{
         padding-top: 50px;
         h1{
             font-size: 50px;
         }
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .title h1{
-        font-size: 20px;
     }
 }
 
@@ -124,6 +122,16 @@
         font-size: small;
         max-width: 700px;
     }
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 14px;
+    padding-left: 20px;
+    width: 120px;
+    cursor: pointer;
 }
 
 // -----------------------------------------
@@ -254,6 +262,18 @@
     img{
         max-width: 870px;
     }
+}
+
+@media screen and (max-width: 768px) {
+    .the-ocean-cleanup-description{
+        h2{
+            font-size: 32px;
+        }
+
+        img{
+            height: 320px;
+        }
+    }  
 }
 
 // --------------------------------------------

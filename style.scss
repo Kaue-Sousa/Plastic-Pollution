@@ -8,10 +8,12 @@
 @import "partials/colors";
 @import "partials/header";
 @import "partials/footer";
+@import "partials/commom";
 @import "partials/layout";
 @import "partials/impacts";
 @import "partials/theoceancleanup";
 @import "partials/consumptiontips";
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&display=swap');
 
 body{
     font-family: 'Sora', sans-serif;
@@ -36,7 +38,7 @@ a{
     text-decoration: none;
 }
 
-p{
+p,ul{
     margin: 15px 0px;
     font-size: 1em;
     text-align: justify;

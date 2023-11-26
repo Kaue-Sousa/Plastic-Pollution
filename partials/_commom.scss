@@ -1,0 +1,107 @@
+// -----------------------------------------
+
+// Container
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 8px;
+}
+
+// -----------------------------------------
+
+// Content
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    overflow: hidden;
+
+    h1{
+        padding: 10px;
+    }
+
+    h2,h3{
+        padding: 20px 0px;
+    }
+
+    img{
+        max-width: 700px;
+    }
+}
+
+// -----------------------------------------
+
+// Background
+
+.background{
+    position: relative;
+    min-height: 100vh;
+}
+
+.background::before{
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: url("assets/background.png");
+    background-color: $black;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    opacity: 0.9;
+}
+
+// -----------------------------------------
+
+// Button-info
+
+.button-info{
+    padding: 14px 20px;
+    color: $white;
+    background-color: $red;
+    border: 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.button-info:hover{
+    animation: scaleButton 0.8s alternate infinite;
+}
+
+@keyframes scaleButton {
+    from{
+      transform: scale(1);
+    }
+    to{
+      transform: scale(1.07);
+    }
+}
+
+// -----------------------------------------
+
+// Section
+
+.section{
+    max-width: 1200px;
+    margin: -10px auto 30px;
+    padding: 30px 20px;
+    background-color: $white;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1180px) {
+    .section{
+        margin: 20px 20px;
+    }
+}
+
+// -----------------------------------------

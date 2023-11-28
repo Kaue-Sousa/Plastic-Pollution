@@ -13,13 +13,14 @@
     <link rel="mask-icon" href="assets/Icon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <div class="background">
         <header>
             <iframe class="header-iframe" src="header.html" frameborder="0"></iframe>
 
-            <main class="title container">
+            <main class="title container" data-aos="fade-up" data-aos-delay="400">
                 <h1><strong>POLUIÇÃO PLÁSTICA MARÍTMA: UM DOS MAIORES PERIGOS PARA OS OCEANOS</strong></h1>
             </main>
         </header>
@@ -27,7 +28,7 @@
 
     <section class="impacts">
         <div class="container initial-impacts-content">
-            <div class="impacts-images">
+            <div class="impacts-images" data-aos="zoom-in" data-aos-delay="100">
                 <img
                     src="assets/pollution-imagens.png"
                     alt="Imagens sobre a poluição plástica marítma"
@@ -37,7 +38,7 @@
                     Poluição plástica e seus impactos nos oceanos. FOTOS FREEPIK 
                 </p>
             </div>
-            <div class="impacts-description">
+            <div class="impacts-description" data-aos="zoom-out-left" data-aos-delay="250">
                 <h2>ENTENDA OS IMPACTOS</h2>
                 <p>
                     As atividades humanas levaram a um declínio dramático na diversidade biológica mundial.
@@ -60,7 +61,7 @@
 
     <section class="environment">
         <div class="container environment-content">
-            <div class="environment-description">
+            <div class="environment-description" data-aos="fade-up" data-aos-delay="200">
                 <h2>PRESERVE O MEIO AMBIENTE</h2>
                 <p>
                     Para combater a poluição plástica nos oceanos, é essencial adotar práticas de consumo sustentáveis. Essas escolhas promovem a preservação dos oceanos
@@ -73,7 +74,7 @@
             </div>
 
             <div class="environment-images">
-                <div class="plastic-recycling">
+                <div class="plastic-recycling" data-aos="zoom-out-right" data-aos-delay="250">
                     <img
                         src="assets/recycling.jpg"
                         alt="Reciclagem de plástico"
@@ -84,7 +85,7 @@
                     </p>
                 </div>
                 
-                <div class="image-content plastic-bottles">
+                <div class="image-content plastic-bottles" data-aos="zoom-out-left" data-aos-delay="400">
                     <img
                         src="assets/plastic-bottles.jpg"
                         alt="Garrafas de plástico"
@@ -103,7 +104,7 @@
     </section>
 
     <section class="the-ocean-cleanup">
-        <div class="container initial-the-ocean-cleanup-content">
+        <div class="container initial-the-ocean-cleanup-content" data-aos="fade-up" data-aos-delay="400">
             <div class="the-ocean-cleanup-description">
                 <h2>CONHEÇA A ONG “THE OCEAN CLEANUP”</h2>
 
@@ -117,7 +118,7 @@
                         Vista superior da renderização do interceptor. 2ª geração atrás e 3ª geração na frente © The Ocean Cleanup
                     </p>
                 </div>
-
+                
                 <p>
                     A "The Ocean Cleanup" é uma organização não governamental (ONG) fundada por Boyan Slat, um inventor e empreendedor holandês. A organização
                     foi estabelecida com o objetivo principal de desenvolver tecnologias avançadas para remover resíduos plásticos dos oceanos. A visão por trás
@@ -138,5 +139,7 @@
     <footer>
         <iframe class="footer-iframe" src="footer.html" frameborder="0" scrolling="no"></iframe>
     </footer>
+
+    <script src="animation.js"></script>
 </body>
 </html>

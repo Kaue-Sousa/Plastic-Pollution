@@ -13,6 +13,7 @@
     <link rel="mask-icon" href="assets/Icon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <div class="background">
@@ -20,7 +21,7 @@
             <iframe class="header-iframe" src="header.html" frameborder="0"></iframe>
         </header>
         <main>
-            <section class="section">
+            <section class="section" data-aos="fade-up" data-aos-delay="400">
                 <div class="consumptiontips-info">
                     <h1>
                         DICAS DE CONSUMO
@@ -30,7 +31,7 @@
                         escolhas conscientes no seu consumo diário. Aqui estão algumas dicas para diminuir a utilização de plástico:
                     </p>
                     
-                    <div class="consumptiontips-list">
+                    <div class="consumptiontips-list" data-aos="zoom-out-right" data-aos-delay="500">
                         <ol>
                             <li><strong>Evite Produtos Descartáveis:</strong></li>
                                 <ul>
@@ -103,7 +104,7 @@
                         conscientes, você contribui para a redução da poluição plástica e para a preservação dos oceanos e do meio ambiente como um todo.
                     </p>
 
-                    <div class="consumptiontips-ref">
+                    <div class="consumptiontips-ref" data-aos="fade-down" data-aos-delay="200">
                         <h2>
                             Referências
                         </h2>
@@ -125,6 +126,8 @@
         <footer>
             <iframe class="footer-iframe" src="footer.html" frameborder="0" scrolling="no"></iframe>
         </footer>
+
+        <script src="animation.js"></script>
     </div>
 </body>
 </html>

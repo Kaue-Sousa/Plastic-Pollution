@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cabeçalho</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <header>
-        <nav class="header-content container">
+        <nav class="header-content container" data-aos="fade-down" data-aos-delay="300">
             <div class="icon header-icon">
                 <a href="index.html" target="_parent">
                     <img
+                        data-aos="flip-up" 
+                        data-aos-delay="300"
+                        data-aos-duration="1500"
                         src="assets/Icon/icon.png"
                         alt="Logo do site"
                     />
@@ -30,5 +34,6 @@
             </div>
         </nav>
     </header>
+    <script src="animation.js"></script>
 </body>
 </html>
